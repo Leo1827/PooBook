@@ -3,22 +3,12 @@ public class Main {
         // objeto: instancia de la clase, o sea le da forma a esa plantilla
 
         // crear objetos (instancias) de la clase
-        Inventario inv = new Inventario(
-                1,
-                "xx1",
-                "Paquete 1",
-                "Paquete de productos",
-                1,
-                0,
-                5);
-        // mostrar informacion inicial
-        inv.mostrarInventario();
+        Banco.mostrarInfo();
+        Banco.registrarCliente(1);
+        Banco.agregarFondos(200000);
+        Banco.retirarFondos(100000);
+        Banco.mostrarInfo();
 
-        inv.agregarInventario(2);
-
-        inv.quitarInventario(1);
-
-        inv.mostrarInventario();
 
 
     }
