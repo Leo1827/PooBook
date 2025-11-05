@@ -16,6 +16,12 @@ public class Personaje {
 
     public Personaje(){}
 
+    // entrenar
+    public void entrenar(int incremento){
+        nivelDePoder += incremento;
+        System.out.println(nombre + " Ha entrenado " + nivelDePoder);
+    }
+
     // Métodos de instancia
     public void pelear(int decremento){
         nivelDePoder -= decremento;
