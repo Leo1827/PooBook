@@ -3,23 +3,23 @@ public class Main {
         // objeto: instancia de la clase, o sea le da forma a esa plantilla
 
         // crear objetos (instancias) de la clase
-        Empleado e1 = new Empleado("Mileer leon", 150.00, "Desarrollador");
-        Empleado e2 = new Empleado("Diego esocbar", 120.00, "Analista");
-        Empleado e3 = new Empleado("Alejandra soto", 135.00, "QA");
+        Inventario inv = new Inventario(
+                1,
+                "xx1",
+                "Paquete 1",
+                "Paquete de productos",
+                1,
+                0,
+                5);
+        // mostrar informacion inicial
+        inv.mostrarInventario();
 
-        // Llamar a metodos de instancia
-        e1.mostrarInformacion();
-        e2.mostrarInformacion();
-        e3.mostrarInformacion();
+        inv.agregarInventario(2);
 
-        // Aplicar aumento del salario
-        e2.aplicarAumento(10);
-        e2.mostrarInformacion();
+        inv.quitarInventario(1);
 
-        // Mostrar cantidad total de empleados (metodo estatico)
-        Empleado.mostrarContador();
+        inv.mostrarInventario();
 
-        // Calcular bono anual general (Metodo estatico)
-        Empleado.calcularBonoAnual(2025);
+
     }
 }
