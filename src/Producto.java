@@ -15,12 +15,17 @@ public class Producto {
         this.price = price;
     }
 
-    public void MostrarProducto(int id, String name, int age, int quantity, double price){
+    public void mostrarProducto(int id, String name, int age, int quantity, double price){
         System.out.printf("\nId producto: %d", id);
         System.out.println("\nNombre: " + name);
         System.out.printf("\nAño: %d", age);
         System.out.printf("\nCantidad: %d", quantity);
         System.out.println("\nPrecio: " + price);
+    }
+
+    public void comprarProducto(double cantidad,double price){
+        double total = cantidad * price;
+        System.out.println("Total a pagar: " + total);
     }
 
 }

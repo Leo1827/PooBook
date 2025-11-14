@@ -7,6 +7,9 @@ public class Main {
         // crear objetos (instancias) de la clase
         Producto producto = new Producto();
 
-        producto.MostrarProducto(1, "Manzana", 205, 25, 1385);
+        producto.mostrarProducto(1, "Manzana", 205, 25, 1385);
+
+        // comprar producto
+        producto.comprarProducto(4, 1385);
     }
 }
